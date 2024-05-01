@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-right: 4%; */
+  background: linear-gradient(357deg, #453838 0%, #11101d 100%);
+  border-radius: 15px;
+}
+
+.App-logo {
+  height: 13vmin;
+  cursor: pointer;
+}
+
+.h-name ul {
+  display: flex;
+  gap: 3rem;
+  margin: 5px;
+
+  padding: 5px;
+}
+.h-name ul li {
+  list-style-type: none;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all .5s;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.h-name ul li:hover{
+    transform: scale(0.97);
+    color: rgb(78, 203, 235);
+
+}
+
+.Butt button{
+    font-size: 23px;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(235, 168, 81), rgb(100, 69, 12));
+    transition: all 1s;
+}
+
+.Butt button:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .App-logo {
+    height: 9vmin;
+  }
+  .h-name ul li {
+    font-size: 18px;
+  }
+  .Butt button{
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+  .App-logo {
+    height: 7vmin;
+  }
+  .h-name ul li {
+    font-size: 16px;
+  }
+  .Butt button{
+    font-size: 16px;
+  }
+  .h-name ul {
+    gap: 2rem;
+  }
+
+}
+@media only screen and (max-width: 750px) {
+  .h-name{
+    display: none;
+  }
+
+
+}

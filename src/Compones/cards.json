@@ -1,0 +1,24 @@
+
+[
+    {
+      "id": "feature-1",
+      "icon": "imgs/Star.svg",
+      "title": "Scheme",
+      "content":
+        "......................................."
+    },
+    {
+      "id": "feature-2",
+      "icon": "imgs/shield.svg",
+      "title": "Activities",
+      "content":
+        "......................................."
+    },
+    {
+      "id": "feature-3",
+      "icon": "imgs/send.svg",
+      "title": "Balance",
+      "content":
+        "........................................"
+    }
+]

@@ -1,0 +1,367 @@
+*{
+    color: white;
+}
+
+p{
+  color: #adb6b6;
+}
+
+.hero {
+  color: rgb(185, 172, 172);
+  height: 83vh;
+  /* background-color: rgb(240, 245, 245); */
+  display: flex;
+}
+
+.hero-right {
+  /* background-color: #914747; */
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* .fst-bg{
+    position: absolute;
+    z-index: 0;
+    width: 60%;
+    height: 65%;
+    background-color: rgba(218, 175, 238, 0.226);
+}
+.snd-bg{
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(232, 240, 240, 0.26);
+}
+.trd-bg{
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(16, 76, 167, 0.205);
+} */
+
+
+.hero-left {
+  /* background-color: #302929; */
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.left-main {
+  width: 80%;
+}
+
+.left-1st {
+  font-size: 20px;
+  background: linear-gradient(5deg, #453838 0%, #11101d 100%);
+  padding: 13px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-3rd {
+  font-size: 21px;
+  width: 95%;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.text-bg {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.left-2nd {
+  font-size: 5rem;
+}
+
+.App-logo3 {
+  height: 70%;
+  /* filter: drop-shadow(5px 3px 10px rgba(37, 226, 226, 0.425)); */
+  filter: drop-shadow(-8px 5px 10px rgba(37, 226, 226, 0.404));
+  /* z-index: 5; */
+}
+
+.s-count {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin: 2rem;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.s-con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.s-num {
+  font-size: 2.6rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.w-join{
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 15px;
+    padding-left: 15px;
+    display: flex;
+    gap: 25px;
+}
+.w-join-right{
+    width: auto;
+    height: auto;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.w-join-left{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.w-join-left-1st{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+.w-join-left-2nd{
+  width: 90%;
+    font-size: 21px;
+    /* text-transform: capitalize; */
+}
+
+.main-butt{
+  color: black;
+  font-size: 21px;
+  padding: 14px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  transition: all 1s;
+}
+
+.main-butt:hover{
+  transform: scale(0.97);
+}
+
+.Schemes{
+  display: flex;
+  gap: 15px;
+  padding: 1.5rem;
+  transition: all 1s;
+  border-radius: 10px;
+  align-items: center;
+  width: 20rem;
+  cursor: pointer;
+}
+
+.s-card{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+.s-img img{
+  width: 3vmax;
+}
+
+.Schemes:hover{
+  background: linear-gradient(37deg, #453838 0%, #11101d 100%);
+
+}
+
+.s-card-ti{
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.s-card-con{
+  font-size: 18px;
+  color: #adb6b6;
+
+}
+
+.vision-misson{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 20px;
+  padding: 20px;
+  
+  /* margin-top: 4rem; */
+}
+
+.vision{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: linear-gradient(135deg, #453838 0%, #11101d 100%);
+  border-radius: 15px;
+  padding: 20px;
+}
+.misson{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: linear-gradient(135deg, #453838 0%, #11101d 100%);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.vm-name{
+  font-size: 2.7rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vm-p{
+  font-size: 21px;
+}
+
+.subject{
+  margin: 4rem;
+}
+
+.cs-name{
+  font-size: 2.7rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sub{
+  padding: 3rem;
+  display: flex;
+  gap: 35px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sub-card{
+  width: 285px;
+  height: 350px;
+  background: linear-gradient(41deg, #453838 0%, #11101d 100%);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 1s;
+  overflow: hidden;
+  
+}
+
+.sub-card:hover{
+  background: linear-gradient(306deg, #453838 0%, #11101d 100%);
+}
+
+.sub-card-name{
+  margin: 0.8rem;
+  margin-bottom: 7px;
+  font-size: 21px;
+}
+.sub-card-de p{
+  margin: 0.8rem;
+  /* margin-right: 12px; */
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.sub-img{
+  width: 100%;
+  /* height: 100%; */
+  object-position: center;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .App-logo3 {
+    height: 60%;
+  }
+  .left-2nd {
+    font-size: 4rem;
+  }
+  
+.w-join-left-1st {
+  font-size: 2.8rem;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  .App-logo3 {
+    height: 50%;
+  }
+  .left-2nd {
+    font-size: 3rem;
+  }
+  .w-join{
+    flex-direction: column;
+  }
+  .w-join-left{
+    width: auto;
+    height: auto;
+  }
+  .Schemes{
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 5px;
+    height: auto;
+  }
+  .hero-left {
+    height: 20rem;
+    width: auto;
+  }
+  .hero-right {
+    height: 50vh;
+    width: auto;
+  }
+  .App-logo3 {
+    height: 80%;
+  }
+  .vision-misson{
+    flex-direction: column;
+  }
+  .vision{
+    width: auto;
+  }
+  .misson{
+    width: auto;
+  }
+  .w-join-left-1st {
+    font-size: 2.1rem;
+}
+}
