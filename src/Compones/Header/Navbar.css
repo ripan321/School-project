@@ -3,13 +3,18 @@
   color: white;
   align-items: center;
   justify-content: space-between;
+  padding-left: 20px;
   /* margin-right: 4%; */
   background: linear-gradient(357deg, #453838 0%, #11101d 100%);
   border-radius: 15px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .App-logo {
-  height: 13vmin;
+  height: 10vmin;
   cursor: pointer;
 }
 

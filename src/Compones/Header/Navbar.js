@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-import logo1 from "./logo1.png";
+import logo1 from "../image/logo1.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -9,14 +10,25 @@ export default function Navbar() {
         <div>
           <div>
             {" "}
-            <img src={logo1} className="App-logo" alt="logo" />
+            <Link to="/">
+              <img src={logo1} className="App-logo" alt="logo" />
+            </Link>
           </div>
         </div>
         <div className="h-name">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Course</li>
+            {/* <a href="#Home"><li>Home</li></a> */}
+            <Link to="/">
+              {" "}
+              <li>Home</li>
+            </Link>
+            <a href="/#About">
+              {" "}
+              <li>About</li>
+            </a>
+            <a href="#Course">
+              <li>Course</li>
+            </a>
             <li>Contact</li>
           </ul>
         </div>

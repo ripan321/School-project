@@ -1,10 +1,17 @@
 // import logo from './logo.svg';
 // import logo1 from './logo1.png';
-import './App.css';
-import Navbar from './Compones/Header/Navbar';
-import Hero from './Compones/Hero/Hero';
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Footer from "./Compones/Footer/Footer";
+import Navbar from "./Compones/Header/Navbar";
+
+// import Hero from "./Compones/Hero/Hero";
+
+
 
 function App() {
+
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -22,10 +29,10 @@ function App() {
         </a>
       </header> */}
 
-      <Navbar/>
-      <Hero/>
-
-
+      <Navbar />
+      <Outlet/>
+      <Footer/>
+      
 
     </div>
   );

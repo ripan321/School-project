@@ -8,6 +8,7 @@ import clss3 from "../image/clss3.jpg";
 import card from "../cards.json";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [counter, setcounter] = useState(false);
@@ -27,7 +28,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="hero">
+      <div className="hero" id="Home">
         <div className="hero-left">
           <div className="left-main">
             <div className="left-1st">
@@ -61,7 +62,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="s-count">
+      <div id="About" className="s-count">
         <div className="s-con">
           {" "}
           <ScrollTrigger
@@ -139,45 +140,59 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="subject">
-        <div className="cs-name text-bg">Our Cource</div>
+      <div id="Course" className="subject">
+        <div className="cs-name text-bg">Our Course</div>
 
         <div className="sub">
-          <div className="sub-card">
-            <div>
-              <img src={clss} className="sub-img" alt="class" />
+          <Link to="/class" className="link">
+            <div className="sub-card">
+              <div>
+                <img src={clss} className="sub-img" alt="class" />
+              </div>
+              <div className="sub-card-name text-bg">
+                {" "}
+                <strong>Class</strong>{" "}
+              </div>
+              <div className="sub-card-de">
+                {" "}
+                <p>
+                  Our school offers high-quality teaching in all subjects from
+                  classes 1 to 10.
+                </p>{" "}
+              </div>
             </div>
-            <div className="sub-card-name">Class</div>
-            <div className="sub-card-de">
-              {" "}
-              <p>
-                Our school offers high-quality teaching in all subjects from
-                classes 1 to 10.
-              </p>{" "}
+          </Link>
+
+          <Link to="/computer" className="link">
+            <div className="sub-card">
+              <div>
+                <img src={clss2} className="sub-img" alt="class" />
+              </div>
+              <div className="sub-card-name text-bg">
+                <strong>Computer Course</strong>{" "}
+              </div>
+              <div className="sub-card-de">
+                {" "}
+                <p>
+                  Our school provides comprehensive computer courses, covering
+                  basic to advanced levels.
+                </p>{" "}
+              </div>
             </div>
-          </div>
-          <div className="sub-card">
-            <div>
-              <img src={clss2} className="sub-img" alt="class" />
-            </div>
-            <div className="sub-card-name">Computer Course</div>
-            <div className="sub-card-de">
-              {" "}
-              <p>
-                Our school provides comprehensive computer courses, covering
-                basic to advanced levels.
-              </p>{" "}
-            </div>
-          </div>
+          </Link>
           <div className="sub-card">
             <div>
               <img src={clss3} className="sub-img" alt="class" />
             </div>
-            <div className="sub-card-name">Practical</div>
+            <div className="sub-card-name text-bg">
+              {" "}
+              <strong>Practical</strong>{" "}
+            </div>
             <div className="sub-card-de">
               {" "}
               <p>
-              At our school, we emphasize practical teaching methods to ensure students have a better understanding of the subjects.
+                At our school, we emphasize practical teaching methods to ensure
+                students have a better understanding of the subjects.
               </p>{" "}
             </div>
           </div>
@@ -217,6 +232,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <div className="fotter"></div>
     </>
   );
 }

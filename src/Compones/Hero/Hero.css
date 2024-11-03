@@ -1,9 +1,13 @@
-*{
-    color: white;
+* {
+  color: white;
 }
 
-p{
+p {
   color: #adb6b6;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .hero {
@@ -43,7 +47,6 @@ p{
     height: 50%;
     background-color: rgba(16, 76, 167, 0.205);
 } */
-
 
 .hero-left {
   /* background-color: #302929; */
@@ -121,41 +124,41 @@ p{
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.w-join{
-    margin: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 15px;
-    padding-left: 15px;
-    display: flex;
-    gap: 25px;
+.w-join {
+  margin: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 15px;
+  padding-left: 15px;
+  display: flex;
+  gap: 25px;
 }
-.w-join-right{
-    width: auto;
-    height: auto;
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.w-join-right {
+  width: auto;
+  height: auto;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.w-join-left{
-    width: 50vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.w-join-left {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.w-join-left-1st{
-    font-size: 3.5rem;
-    text-transform: capitalize;
+.w-join-left-1st {
+  font-size: 3.5rem;
+  text-transform: capitalize;
 }
-.w-join-left-2nd{
+.w-join-left-2nd {
   width: 90%;
-    font-size: 21px;
-    /* text-transform: capitalize; */
+  font-size: 21px;
+  /* text-transform: capitalize; */
 }
 
-.main-butt{
+.main-butt {
   color: black;
   font-size: 21px;
   padding: 14px;
@@ -175,11 +178,11 @@ p{
   transition: all 1s;
 }
 
-.main-butt:hover{
+.main-butt:hover {
   transform: scale(0.97);
 }
 
-.Schemes{
+.Schemes {
   display: flex;
   gap: 15px;
   padding: 1.5rem;
@@ -190,42 +193,39 @@ p{
   cursor: pointer;
 }
 
-.s-card{
+.s-card {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
 }
-.s-img img{
+.s-img img {
   width: 3vmax;
 }
 
-.Schemes:hover{
+.Schemes:hover {
   background: linear-gradient(37deg, #453838 0%, #11101d 100%);
-
 }
 
-.s-card-ti{
+.s-card-ti {
   font-size: 22px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.s-card-con{
+.s-card-con {
   font-size: 18px;
   color: #adb6b6;
-
 }
 
-.vision-misson{
+.vision-misson {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
   margin: 20px;
   padding: 20px;
-  
+
   /* margin-top: 4rem; */
 }
 
-.vision{
+.vision {
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@ p{
   border-radius: 15px;
   padding: 20px;
 }
-.misson{
+.misson {
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -244,32 +244,32 @@ p{
   padding: 20px;
 }
 
-.vm-name{
+.vm-name {
   font-size: 2.7rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.vm-p{
+.vm-p {
   font-size: 21px;
 }
 
-.subject{
+.subject {
   margin: 4rem;
 }
 
-.cs-name{
+.cs-name {
   font-size: 2.7rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.sub{
+.sub {
   padding: 3rem;
   display: flex;
   gap: 35px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.sub-card{
+.sub-card {
   width: 285px;
   height: 350px;
   background: linear-gradient(41deg, #453838 0%, #11101d 100%);
@@ -277,26 +277,25 @@ p{
   cursor: pointer;
   transition: all 1s;
   overflow: hidden;
-  
 }
 
-.sub-card:hover{
+.sub-card:hover {
   background: linear-gradient(306deg, #453838 0%, #11101d 100%);
 }
 
-.sub-card-name{
+.sub-card-name {
   margin: 0.8rem;
   margin-bottom: 7px;
   font-size: 21px;
 }
-.sub-card-de p{
+.sub-card-de p {
   margin: 0.8rem;
   /* margin-right: 12px; */
   margin-top: 0px;
   font-size: 18px;
 }
 
-.sub-img{
+.sub-img {
   width: 100%;
   /* height: 100%; */
   object-position: center;
@@ -310,10 +309,10 @@ p{
   .left-2nd {
     font-size: 4rem;
   }
-  
-.w-join-left-1st {
-  font-size: 2.8rem;
-}
+
+  .w-join-left-1st {
+    font-size: 2.8rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -323,14 +322,14 @@ p{
   .left-2nd {
     font-size: 3rem;
   }
-  .w-join{
+  .w-join {
     flex-direction: column;
   }
-  .w-join-left{
+  .w-join-left {
     width: auto;
     height: auto;
   }
-  .Schemes{
+  .Schemes {
     justify-content: center;
   }
 }
@@ -352,16 +351,16 @@ p{
   .App-logo3 {
     height: 80%;
   }
-  .vision-misson{
+  .vision-misson {
     flex-direction: column;
   }
-  .vision{
+  .vision {
     width: auto;
   }
-  .misson{
+  .misson {
     width: auto;
   }
   .w-join-left-1st {
     font-size: 2.1rem;
-}
+  }
 }

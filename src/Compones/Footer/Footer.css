@@ -1,0 +1,116 @@
+.footer {
+  /* height: 12rem; */
+
+  background: linear-gradient(290deg, #453838a6 0%, #11101db4 100%);
+  margin-top: 9rem;
+
+  border-radius: 25px 5px 25px 5px;
+  color: white;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main-foot {
+  display: flex;
+  justify-content: space-around;
+}
+
+b {
+  font-size: 19px;
+}
+
+.logo {
+  height: 9vmin;
+  cursor: pointer;
+}
+
+.s-logo {
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+.s-icon {
+  display: flex;
+  gap: 1rem;
+}
+
+.l-footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%;
+}
+
+.r-footer {
+  /* background: #b95454; */
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.l-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  padding-left: 40px;
+}
+
+.l-foot-con ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 5px;
+
+  padding: 5px;
+}
+.l-foot-con li {
+  list-style-type: none;
+  /* font-size: 23px; */
+  cursor: pointer;
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.l-foot-con li:hover {
+  /* transform: scale(0.97); */
+  color: rgb(78, 203, 235);
+}
+
+.bottom-foot {
+  padding-left: 4rem;
+  display: flex;
+}
+
+.b-l-foot {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+.b-r-foot {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.policy {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.policy:hover {
+  /* transform: scale(0.97); */
+  color: rgb(78, 203, 235);
+}
+
+.line {
+  width: 100%;
+  border-color: rgb(79, 82, 81);
+}
+.line1 {
+  border-color: rgb(79, 82, 81);
+}
