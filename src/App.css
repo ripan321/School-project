@@ -6,6 +6,7 @@
   padding: 15px;
   padding-top: 8px;
   font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
 
 }
 html {
@@ -24,6 +25,25 @@ html {
 
 .App-link {
   color: #61dafb;
+}
+
+@media (max-width: 868px) {
+
+  ::-webkit-scrollbar {
+    display: none;
+   background: #000;
+  }
+
+
+}
+@media (max-width: 480px) {
+
+  ::-webkit-scrollbar {
+    display: none;
+   background: #000;
+  }
+
+
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

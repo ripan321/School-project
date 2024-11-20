@@ -9,7 +9,7 @@
   border-radius: 15px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -17,7 +17,51 @@ a{
   height: 10vmin;
   cursor: pointer;
 }
+.App-manu {
+  width: 5vmin;
+  height: 4vmin;
+  cursor: pointer;
+  display: none;
+}
+.manu-bar {
+  margin-right: 15px;
+}
+.none {
+  display: none;
+}
 
+/* .manu{
+  background: #9e1d1d;
+} */
+
+.manu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 5px;
+
+  position: absolute;
+  z-index: 9;
+  background: linear-gradient(307deg, #453838 0%, #11101d 100%);
+  border-radius: 10px;
+  right: 10px;
+
+  padding: 5px;
+}
+.manu ul li {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding: 0.5rem;
+  list-style-type: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.manu ul li:hover {
+  color: rgb(78, 203, 235);
+}
 .h-name ul {
   display: flex;
   gap: 3rem;
@@ -29,32 +73,32 @@ a{
   list-style-type: none;
   font-size: 23px;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
   color: rgba(255, 255, 255, 0.61);
 }
 
-.h-name ul li:hover{
-    transform: scale(0.97);
-    color: rgb(78, 203, 235);
-
+.h-name ul li:hover {
+  transform: scale(0.97);
+  color: rgb(78, 203, 235);
 }
 
-.Butt button{
-    font-size: 23px;
-    color: black;
-    border-radius: 15px;
-    border: none;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 15px;
-    cursor: pointer;
-    background-image: linear-gradient(rgb(235, 168, 81), rgb(100, 69, 12));
-    transition: all 1s;
+.Butt button {
+  font-size: 23px;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  background-image: linear-gradient(rgb(235, 168, 81), rgb(100, 69, 12));
+  transition: all 1s;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.Butt button:hover{
-    color: white;
+.Butt button:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -64,10 +108,9 @@ a{
   .h-name ul li {
     font-size: 18px;
   }
-  .Butt button{
+  .Butt button {
     font-size: 18px;
   }
-
 }
 
 @media only screen and (max-width: 750px) {
@@ -77,18 +120,30 @@ a{
   .h-name ul li {
     font-size: 16px;
   }
-  .Butt button{
-    font-size: 16px;
+  .Butt button {
+    font-size: 13px;
   }
   .h-name ul {
     gap: 2rem;
   }
 
 }
-@media only screen and (max-width: 750px) {
-  .h-name{
+@media only screen and (min-width: 750px) {
+  .manu-bar{
     display: none;
   }
-
-
+  .manu ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .h-name {
+    display: none;
+  }
+  .Butt {
+    display: none;
+  }
+  .App-manu {
+    display: block;
+  }
 }

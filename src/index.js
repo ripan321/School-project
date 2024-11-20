@@ -8,6 +8,9 @@ import Class from "./Compones/Hero/Class";
 import Computer from "./Compones/Hero/Computer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Hero from "./Compones/Hero/Hero";
+import Login from "./Compones/Login";
+import Practical from "./Compones/Hero/Practical";
+import Contact from "./Compones/Hero/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,18 @@ const router = createBrowserRouter([
       {
         path: "/computer",
         element: <Computer />,
+      },
+      {
+        path: "/practical",
+        element: <Practical />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

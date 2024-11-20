@@ -62,6 +62,7 @@ const Footer = () => {
                 <li>Computer Science</li>
                 <li>Code Foundations</li>
                 <li>Developer Tools</li>
+                <li>Programing</li>
                 <li>Web Design</li>
                 <li>Web Development</li>
               </ul>
@@ -94,7 +95,7 @@ const Footer = () => {
           <div className="policy">Terms</div>
         </div>
         <div className="b-r-foot">
-          <div>© Copyright 2022 JBB</div>
+          <div className="b-r-foot-p">© Copyright 2022 JBB</div>
         </div>
       </div>
     </div>

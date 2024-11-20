@@ -9,6 +9,19 @@ import card from "../cards.json";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const framerright = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: (index) => ({
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, delay: 0.25 * index },
+  }),
+};
 
 export default function Hero() {
   const [counter, setcounter] = useState(false);
@@ -18,7 +31,6 @@ export default function Hero() {
       <div className="s-img">
         <img src={icon} alt="star Img" />
       </div>
-
       <div className="s-card">
         <div className="s-card-ti">{title}</div>
         <div className="s-card-con">{content}</div>
@@ -31,25 +43,47 @@ export default function Hero() {
       <div className="hero" id="Home">
         <div className="hero-left">
           <div className="left-main">
-            <div className="left-1st">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="left-1st"
+            >
               <img src={logo2} className="App-logo1" alt="logo1" />
               <div> Your Kids Deserve the best Education.</div>
-            </div>
+            </motion.div>
             <div className="left-2nd">
-              <div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 Jatiya <br /> <span className="text-bg">Bidyalaya</span>,Boko
-              </div>
+              </motion.div>
             </div>
-            <div className="left-3rd">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="left-3rd"
+            >
               <p>
                 Our School boasts exceptional teachers who impart knowledge with
                 passion and dedication. Their engaging and interactive teaching
                 style fosters a deep understanding of the subject.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-        <div className="hero-right">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="hero-right"
+        >
           <img src={logo3} className="App-logo3" alt="logo1" />
           {/* 
           <div className="absolute z-[0] w-[60%] h-[65%] top-0 pink__gradient" />
@@ -59,7 +93,7 @@ export default function Hero() {
           <div className="fst-bg" />
           <div className="snd-bg" />
           <div className="trd-bg" /> */}
-        </div>
+        </motion.div>
       </div>
 
       <div id="About" className="s-count">
@@ -129,14 +163,21 @@ export default function Hero() {
             </p>
           </div>
           <div className="w-join-left-3rd">
-            <button className="main-butt">Get Joined</button>
+            <Link to="/contact"><button className="main-butt">Get Joined</button></Link> 
           </div>
         </div>
 
         <div className="w-join-right">
           {card.map((card, index) => (
-            <Cards key={card.id} {...card} index={index} />
-          ))}
+          <motion.div
+              initial="hidden"
+              whileInView="show"
+              variants={framerright}
+              custom={index}
+            >
+              <Cards key={card.id} {...card} index={index} />
+              </motion.div>
+            ))}
         </div>
       </div>
 
@@ -145,7 +186,13 @@ export default function Hero() {
 
         <div className="sub">
           <Link to="/class" className="link">
-            <div className="sub-card">
+            <motion.div
+              initial={{ opacity: 0.2, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="sub-card"
+            >
               <div>
                 <img src={clss} className="sub-img" alt="class" />
               </div>
@@ -160,11 +207,17 @@ export default function Hero() {
                   classes 1 to 10.
                 </p>{" "}
               </div>
-            </div>
+            </motion.div>
           </Link>
 
           <Link to="/computer" className="link">
-            <div className="sub-card">
+            <motion.div
+              initial={{ opacity: 0.2, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="sub-card"
+            >
               <div>
                 <img src={clss2} className="sub-img" alt="class" />
               </div>
@@ -178,9 +231,16 @@ export default function Hero() {
                   basic to advanced levels.
                 </p>{" "}
               </div>
-            </div>
+            </motion.div>
           </Link>
-          <div className="sub-card">
+          <Link to="practical">
+          <motion.div
+            initial={{ opacity: 0.2, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="sub-card"
+          >
             <div>
               <img src={clss3} className="sub-img" alt="class" />
             </div>
@@ -195,12 +255,17 @@ export default function Hero() {
                 students have a better understanding of the subjects.
               </p>{" "}
             </div>
-          </div>
+          </motion.div>
+          </Link>
         </div>
       </div>
 
       <div className="vision-misson">
-        <div className="vision">
+        <motion.div initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="vision">
           <div className="vm-name text-bg">Our Vision</div>
           <div className="vm-p">
             <p>
@@ -213,9 +278,13 @@ export default function Hero() {
               and the prosperity of the human race.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="misson">
+        <motion.div initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+               className="misson">
           <div className="vm-name text-bg">Our Misson</div>
           <div className="vm-p">
             <p>
@@ -230,10 +299,8 @@ export default function Hero() {
               society as a whole.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-
-      <div className="fotter"></div>
     </>
   );
 }

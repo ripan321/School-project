@@ -1,4 +1,17 @@
 .maincls{
     /* background: linear-gradient(357deg, #453838 0%, #11101d 100%); */
-    height: 30vb;
+    height: 50vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(150, 158, 161);
+}
+
+@media only screen and (max-width: 500px) {
+    .maincls{
+
+        font-size: 1rem;
+    }
+
 }

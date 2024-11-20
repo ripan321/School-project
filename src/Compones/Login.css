@@ -1,0 +1,114 @@
+.main-log{
+    display: flex;
+}
+.right-log{
+    width: 50%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.main-from{
+    max-width: 500px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.left-log{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo {
+    width: 80vmin;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input{
+    background: #000;
+    border-radius: 0 5px 0 8px ;
+    border-color: rgb(0, 0, 0);
+    border-top: #000;
+    border-left: #000;
+    border-right: #000;
+    height: 30px;
+    width: 80%;
+    font-size: 18px;
+}
+
+.submit{
+    background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  color: #000;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label{
+    font-size: 18px;
+}
+.span {
+    color: red;
+    font-size: 12px;
+}
+.email-pass{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pass{
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+    margin-right: 20%;
+}
+
+.forgot{
+    font-size: 14px;
+    color: rgb(121, 238, 147);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .right-log{
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .log-1st{
+        font-size: 12px;
+    }
+
+
+}
+@media only screen and (max-width: 750px) {
+    .main-log{
+        flex-direction: column-reverse;
+    }
+    .right-log{
+        width: 100%;
+    }
+    
+    .left-log{
+        width: 100%;
+    }
+
+}

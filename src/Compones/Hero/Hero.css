@@ -4,6 +4,7 @@
 
 p {
   color: #adb6b6;
+
 }
 
 .link {
@@ -110,7 +111,7 @@ p {
   justify-content: space-around;
   margin-bottom: 4rem;
   margin-top: 3rem;
-  margin: 2rem;
+  margin: 1rem;
   font-size: 24px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -204,6 +205,7 @@ p {
 
 .Schemes:hover {
   background: linear-gradient(37deg, #453838 0%, #11101d 100%);
+  
 }
 
 .s-card-ti {
@@ -263,14 +265,14 @@ p {
 }
 
 .sub {
-  padding: 3rem;
+  padding-top: 3rem;
   display: flex;
   gap: 35px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .sub-card {
-  width: 285px;
+  /* width: 285px; */
   height: 350px;
   background: linear-gradient(41deg, #453838 0%, #11101d 100%);
   border-radius: 15px;
@@ -332,6 +334,9 @@ p {
   .Schemes {
     justify-content: center;
   }
+  .vision-misson {
+    gap: 2rem;
+  }
 }
 @media only screen and (max-width: 750px) {
   .hero {
@@ -349,7 +354,7 @@ p {
     width: auto;
   }
   .App-logo3 {
-    height: 80%;
+    height: 65%;
   }
   .vision-misson {
     flex-direction: column;
@@ -363,4 +368,66 @@ p {
   .w-join-left-1st {
     font-size: 2.1rem;
   }
+  .s-img img{
+    width: 4vmax;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .left-2nd {
+    font-size: 2.5rem;
+  }
+
+  
+}
+@media only screen and (max-width: 330px) {
+  .left-1st {
+    font-size: 13px;
+  }
+
+  
+}
+@media only screen and (max-width: 500px) {
+  .Schemes {
+    width: 12rem;
+  }
+  .s-num{
+    font-size: 2rem;
+  }
+  .s-count {
+    font-size: 19px;
+  }
+
+  .cs-name{
+    font-size: 2.2rem;
+  }
+
+  .vm-name{
+    font-size: 2rem;
+  }
+
+  
+  .w-join-left-1st {
+    font-size: 2rem;
+  }
+  .w-join{
+    margin: 1rem;
+  }
+  .bottom-foot{
+    padding-left: 0;
+  }
+
+  .vm-p{
+    font-size: 17px;
+  }
+  .s-img img{
+    width: 5vmax;
+  }
+  
+}
+@media only screen and (min-width: 500px) {
+  .sub-card {
+    width: 285px;
+  }
+  
 }

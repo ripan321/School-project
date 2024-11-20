@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import Footer from "./Compones/Footer/Footer";
 import Navbar from "./Compones/Header/Navbar";
+import ScrollToTop from "./Compones/ScrollToTop";
 
 // import Hero from "./Compones/Hero/Hero";
 
@@ -13,7 +14,8 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App" >
+      <ScrollToTop/>
       {/* <header className="App-header">
         <img src={logo1} className="App-logo" alt="logo" />
         <p>
